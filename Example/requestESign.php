@@ -8,7 +8,7 @@
 
     include 'common.php';
 
-    // Kakaocert 이용기관코드
+    // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
     $clientCode = '020040000050';
 
     // 간편 전자서명 요청정보 객체
