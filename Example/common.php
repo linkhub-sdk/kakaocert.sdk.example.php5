@@ -8,7 +8,7 @@
   *
   */
 
-  require_once '../Kakaocert/KakaocertService.php';
+  require_once '../Kakaocert/Kakaocert.php';
 
   // 링크아이디
   $LinkID = 'KAKAOCERT0406';
