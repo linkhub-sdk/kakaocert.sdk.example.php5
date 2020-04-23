@@ -6,21 +6,25 @@
 	</head>
 <?php
 
-    include 'common.php';
+  /*
+  * 본인인증 요청결과를 확인합니다.
+  */
 
-    // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-    $clientCode = '020040000050';
+  include 'common.php';
 
-    // 접수아이디
-    $receiptID = '020042312125400001';
+  // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
+  $clientCode = '020040000050';
 
-    try {
-        $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);
-    }
-    catch(KakaocertException $pe) {
-        $code = $pe->getCode();
-        $message = $pe->getMessage();
-    }
+  // 본인인증 요청시 반환받은 접수아이디
+  $receiptID = '020042312125400001';
+
+  try {
+      $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);
+  }
+  catch(KakaocertException $pe) {
+      $code = $pe->getCode();
+      $message = $pe->getMessage();
+  }
 ?>
 	<body>
 		<div id="content">
