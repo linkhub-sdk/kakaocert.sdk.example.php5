@@ -12,7 +12,7 @@
     $clientCode = '020040000050';
 
     // 접수아이디
-    $receiptID = '020042311542000001';
+    $receiptID = '020042313445900001';
 
     try {
         $result = $KakaocertService->getESignResult($clientCode, $receiptID);
