@@ -20,7 +20,7 @@
   // STREAM 사용시에는 php.ini의 allow_url_fopen = on 으로 설정해야함.
   define('LINKHUB_COMM_MODE','CURL');
 
-  $KakaocertService = new $KakaocertService($LinkID, $SecretKey);
+  $KakaocertService = new KakaocertService($LinkID, $SecretKey);
 
   // 인증토큰에 대한 IP제한기능 사용여부, 권장(true)
   $KakaocertService->IPRestrictOnOff(true);
