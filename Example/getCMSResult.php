@@ -16,7 +16,7 @@
   $clientCode = '020040000050';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '020042313300500001';
+  $receiptID = '020042315345800001';
 
   try {
       $result = $KakaocertService->getCMSResult($clientCode, $receiptID);
@@ -55,7 +55,6 @@
               <li>clientUserID (납부자번호) : <?php echo $result->clientUserID ?></li>
               <li>expires_in (인증요청 만료시간(초)) : <?php echo $result->expires_in ?></li>
               <li>callCenterNum (고객센터 번호) : <?php echo $result->callCenterNum ?></li>
-              <li>token (토큰 원문) : <?php echo $result->token ?></li>
               <li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <?php echo $result->allowSimpleRegistYN ?></li>
               <li>verifyNameYN (수신자 실명확인 여부) : <?php echo $result->verifyNameYN ?></li>
               <li>payload (payload) : <?php echo $result->payload ?></li>

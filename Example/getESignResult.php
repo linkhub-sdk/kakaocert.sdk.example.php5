@@ -16,14 +16,14 @@
   $clientCode = '020040000050';
 
   // 간편 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020042313445900001';
+  $receiptID = '020042311291800001';
 
   try {
       $result = $KakaocertService->getESignResult($clientCode, $receiptID);
   }
-  catch(KakaocertException $pe) {
-      $code = $pe->getCode();
-      $message = $pe->getMessage();
+  catch(KakaocertException $ke) {
+      $code = $ke->getCode();
+      $message = $ke->getMessage();
   }
 ?>
 	<body>
