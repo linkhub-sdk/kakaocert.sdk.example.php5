@@ -79,7 +79,7 @@
   try {
       $receiptID = $KakaocertService->requestCMS($clientCode, $RequestCMS);
   }
-  catch(PopbillException $pe) {
+  catch(KakaocertException $pe) {
       $code = $pe->getCode();
       $message = $pe->getMessage();
   }

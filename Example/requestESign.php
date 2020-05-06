@@ -64,7 +64,7 @@
   try {
       $receiptID = $KakaocertService->requestESign($clientCode, $RequestESign);
   }
-  catch(PopbillException $pe) {
+  catch(KakaocertException $pe) {
       $code = $pe->getCode();
       $message = $pe->getMessage();
   }

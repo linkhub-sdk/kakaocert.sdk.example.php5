@@ -66,7 +66,7 @@
   try {
       $receiptID = $KakaocertService->requestVerifyAuth($clientCode, $RequestVerifyAuth);
   }
-  catch(PopbillException $pe) {
+  catch(KakaocertException $pe) {
       $code = $pe->getCode();
       $message = $pe->getMessage();
   }
