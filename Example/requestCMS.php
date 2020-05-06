@@ -28,13 +28,13 @@
 	$RequestCMS->Expires_in = 60;
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-	$RequestCMS->ReceiverBirthDay = '19900108';
+	$RequestCMS->ReceiverBirthDay = '19700101';
 
   // 수신자 휴대폰번호
-	$RequestCMS->ReceiverHP = '01043245117';
+	$RequestCMS->ReceiverHP = '01012341234';
 
   // 수신자 성명
-	$RequestCMS->ReceiverName = '정요한';
+	$RequestCMS->ReceiverName = '테스트';
 
   // 예금주명
   $RequestCMS->BankAccountName = '예금주명';
