@@ -59,9 +59,6 @@
   // 인증요청 메시지 제목, 카카오톡 인증메시지 중 "요청구분" 항목에 표시
 	$RequestCMS->TMSTitle = 'TMSTitle 0423';
 
-  // 전자서명할 토큰 원문
-  $RequestCMS->Token = "TMS Token 0423 ";
-
   // 은행계좌 실명확인 생략여부
   // true : 은행계좌 실명확인 절차를 생략
   // false : 은행계좌 실명확인 절차를 진행
