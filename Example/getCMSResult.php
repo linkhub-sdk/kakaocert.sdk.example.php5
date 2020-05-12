@@ -13,10 +13,10 @@
   include 'common.php';
 
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-  $clientCode = '020040000050';
+  $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '020042315345800001';
+  $receiptID = '020051118233100001';
 
   try {
       $result = $KakaocertService->getCMSResult($clientCode, $receiptID);

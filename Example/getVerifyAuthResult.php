@@ -13,10 +13,10 @@
   include 'common.php';
 
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-  $clientCode = '020040000050';
+  $clientCode = '020040000001';
 
   // 본인인증 요청시 반환받은 접수아이디
-  $receiptID = '020042312125400001';
+  $receiptID = '020051118232700001';
 
   try {
       $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);

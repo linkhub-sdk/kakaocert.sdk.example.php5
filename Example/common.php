@@ -11,10 +11,10 @@
   require_once '../Kakaocert/Kakaocert.php';
 
   // 링크아이디
-  $LinkID = 'KAKAOCERT0406';
+  $LinkID = 'TESTER';
 
   // 비밀키
-  $SecretKey = '9HOTRlrOipIPRGkDdELwYnESP4XTOGZbXrD67FvNyqU=';
+  $SecretKey = 'SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=';
 
   // 통신방식 기본은 CURL , curl 사용에 문제가 있을경우 STREAM 사용가능.
   // STREAM 사용시에는 php.ini의 allow_url_fopen = on 으로 설정해야함.

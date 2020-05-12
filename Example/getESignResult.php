@@ -13,10 +13,10 @@
   include 'common.php';
 
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-  $clientCode = '020040000050';
+  $clientCode = '020040000001';
 
   // 간편 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020042311291800001';
+  $receiptID = '020051111014100001';
 
   try {
       $result = $KakaocertService->getESignResult($clientCode, $receiptID);
