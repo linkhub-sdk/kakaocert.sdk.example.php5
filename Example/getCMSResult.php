@@ -46,13 +46,6 @@
               <li>clientName (이용기관명) : <?php echo $result->clientName ?></li>
               <li>state (상태코드) : <?php echo $result->state ?></li>
               <li>regDT (등록일시) : <?php echo $result->regDT ?></li>
-              <li>receiverHP (수신자 휴대폰번호) : <?php echo $result->receiverHP ?></li>
-              <li>receiverName (수신자 성명) : <?php echo $result->receiverName ?></li>
-              <li>receiverBirthday (수신자 생년월일) : <?php echo $result->receiverBirthday ?></li>
-              <li>bankAccountName (예금주명) : <?php echo $result->bankAccountName ?></li>
-              <li>bankAccountNum (계좌번호) : <?php echo $result->bankAccountNum ?></li>
-              <li>bankCode (은행코드) : <?php echo $result->bankCode ?></li>
-              <li>clientUserID (납부자번호) : <?php echo $result->clientUserID ?></li>
               <li>expires_in (인증요청 만료시간(초)) : <?php echo $result->expires_in ?></li>
               <li>callCenterNum (고객센터 번호) : <?php echo $result->callCenterNum ?></li>
               <li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <?php echo $result->allowSimpleRegistYN ?></li>
