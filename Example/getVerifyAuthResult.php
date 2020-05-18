@@ -19,11 +19,11 @@
   $receiptID = '020051118232700001';
 
   try {
-      $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);
+    $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);
   }
   catch(KakaocertException $pe) {
-      $code = $pe->getCode();
-      $message = $pe->getMessage();
+    $code = $pe->getCode();
+    $message = $pe->getMessage();
   }
 ?>
 	<body>

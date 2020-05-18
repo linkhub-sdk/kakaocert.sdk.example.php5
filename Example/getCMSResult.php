@@ -19,11 +19,11 @@
   $receiptID = '020051118233100001';
 
   try {
-      $result = $KakaocertService->getCMSResult($clientCode, $receiptID);
+    $result = $KakaocertService->getCMSResult($clientCode, $receiptID);
   }
   catch(KakaocertException $pe) {
-      $code = $pe->getCode();
-      $message = $pe->getMessage();
+    $code = $pe->getCode();
+    $message = $pe->getMessage();
   }
 ?>
 	<body>
