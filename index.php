@@ -9,10 +9,10 @@
     <p class="heading1">Kakaocert SDK PHP 5.x Example.</p>
     <br/>
     <fieldset class="fieldset1">
-      <legend>간편 전자서명 API</legend>
+      <legend>전자서명 API</legend>
       <ul>
-          <li><a href="Example/requestESign.php">requestESign</a> - 간편 전자서명 요청</li>
-          <li><a href="Example/getESignResult.php">getESignResult</a> - 간편 전자서명 결과확인</li>
+          <li><a href="Example/requestESign.php">requestESign</a> - 전자서명 요청</li>
+          <li><a href="Example/getESignResult.php">getESignResult</a> - 전자서명 결과확인</li>
 
       </ul>
     </fieldset>

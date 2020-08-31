@@ -7,7 +7,7 @@
 <?php
 
   /*
-  * 간편 전자서명 요청결과를 확인합니다.
+  * 전자서명 요청결과를 확인합니다.
   */
 
   include 'common.php';
@@ -15,11 +15,15 @@
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
   $clientCode = '020040000001';
 
-  // 간편 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020051111014100001';
+  // 전자서명 요청시 반환받은 접수아이디
+  $receiptID = '020083115035600001';
+
+  // 전자서명 AppToApp 방식에서 앱스킴으로 반환받은 서명값.
+  // Talk Mesage 방식으로 전자서명 요청한 경우 null 처리.
+  $signature = null;
 
   try {
-    $result = $KakaocertService->getESignResult($clientCode, $receiptID);
+    $result = $KakaocertService->getESignResult($clientCode, $receiptID, $signature);
   }
   catch(KakaocertException $ke) {
     $code = $ke->getCode();
@@ -31,7 +35,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>간편 전자서명 결과정보 확인</legend>
+				<legend>전자서명 결과정보 확인</legend>
 				<ul>
 					<?php
 						if ( isset($code) ) {
@@ -42,6 +46,7 @@
 						} else {
 					?>
               <li>receiptID (접수 아이디) : <?php echo $result->receiptID ?></li>
+              <li>tx_id (카카오톡 트랜잭션아이디-AppToApp용) : <?php echo $result->tx_id ?></li>
               <li>clientCode (이용기관코드) : <?php echo $result->clientCode ?></li>
               <li>clientName (이용기관명) : <?php echo $result->clientName ?></li>
               <li>state (상태코드) : <?php echo $result->state ?></li>
@@ -62,7 +67,7 @@
               <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <?php echo $result->viewDT ?></li>
               <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <?php echo $result->completeDT ?></li>
               <li>verifyDT (전자서명 검증일시) : <?php echo $result->verifyDT ?></li>
-
+              <li>appUseYN (AppToApp 호출여부) : <?php echo $result->appUseYN ?></li>
 					<?php
 						}
 					?>
