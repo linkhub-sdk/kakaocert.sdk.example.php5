@@ -7,7 +7,7 @@
 <?php
 
   /*
-  * 자동이체 출금동의 요청결과를 확인합니다.
+  * 자동이체 출금동의 인증 상태를 확인합니다.
   */
 
   include 'common.php';
@@ -16,10 +16,10 @@
   $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '020051118233100001';
+  $receiptID = '020090815341800001';
 
   try {
-    $result = $KakaocertService->getCMSResult($clientCode, $receiptID);
+    $result = $KakaocertService->getCMSState($clientCode, $receiptID);
   }
   catch(KakaocertException $pe) {
     $code = $pe->getCode();
@@ -31,7 +31,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>자동이체 출금동의 결과정보 확인</legend>
+				<legend>자동이체 출금동의 인증상태 확인</legend>
 				<ul>
 					<?php
 						if ( isset($code) ) {
@@ -55,7 +55,7 @@
               <li>expireDT (인증요청 만료일시) : <?php echo $result->expireDT ?></li>
               <li>tmstitle (인증요청 메시지 제목) : <?php echo $result->tmstitle ?></li>
               <li>tmsmessage (인증요청 메시지 부가내용) : <?php echo $result->tmsmessage ?></li>
-              <li>signedData (전자서명 데이터 전문) : <?php echo $result->signedData ?></li>
+
               <li>subClientName (별칭) : <?php echo $result->subClientName ?></li>
               <li>subClientCode (별칭코드) : <?php echo $result->subClientCode ?></li>
               <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <?php echo $result->viewDT ?></li>

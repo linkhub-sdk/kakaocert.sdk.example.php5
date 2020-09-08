@@ -12,7 +12,7 @@
       <legend>전자서명 API</legend>
       <ul>
           <li><a href="Example/requestESign.php">requestESign</a> - 전자서명 요청</li>
-          <li><a href="Example/getESignResult.php">getESignResult</a> - 전자서명 결과확인</li>
+          <li><a href="Example/getESignState.php">getESignState</a> - 전자서명 인증상태 확인</li>
 
       </ul>
     </fieldset>
@@ -20,14 +20,14 @@
       <legend>본인인증 API</legend>
       <ul>
         <li><a href="Example/requestVerifyAuth.php">requestVerifyAuth</a> - 본인인증 요청</li>
-        <li><a href="Example/getVerifyAuthResult.php">getVerifyAuthResult</a> - 본인인증 결과확인</li>
+        <li><a href="Example/getVerifyAuthState.php">getVerifyAuthState</a> - 본인인증 인증상태 확인</li>
       </ul>
     </fieldset>
     <fieldset class="fieldset1">
       <legend>자동이체 출금동의 API</legend>
       <ul>
         <li><a href="Example/requestCMS.php">requestCMS</a> - 출금동의 요청</li>
-        <li><a href="Example/getCMSResult.php">getCMSResult</a> - 출금동의 결과확인</li>
+        <li><a href="Example/getCMSState.php">getCMSState</a> - 출금동의 인증상태 확인</li>
       </ul>
     </fieldset>
 

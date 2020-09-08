@@ -7,7 +7,7 @@
 <?php
 
   /*
-  * 본인인증 요청결과를 확인합니다.
+  * 본인인증 인증 상태를 확인합니다.
   */
 
   include 'common.php';
@@ -16,10 +16,10 @@
   $clientCode = '020040000001';
 
   // 본인인증 요청시 반환받은 접수아이디
-  $receiptID = '020051118232700001';
+  $receiptID = '020090815371100001';
 
   try {
-    $result = $KakaocertService->getVerifyAuthResult($clientCode, $receiptID);
+    $result = $KakaocertService->getVerifyAuthState($clientCode, $receiptID);
   }
   catch(KakaocertException $pe) {
     $code = $pe->getCode();
@@ -31,7 +31,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>본인인증 결과정보 확인</legend>
+				<legend>본인인증 인증상태 확인</legend>
 				<ul>
 					<?php
 						if ( isset($code) ) {
@@ -48,7 +48,7 @@
               <li>regDT (등록일시) : <?php echo $result->regDT ?></li>
               <li>expires_in (인증요청 만료시간(초)) : <?php echo $result->expires_in ?></li>
               <li>callCenterNum (고객센터 번호) : <?php echo $result->callCenterNum ?></li>
-              <li>token (토큰 원문) : <?php echo $result->token ?></li>
+
               <li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <?php echo $result->allowSimpleRegistYN ?></li>
               <li>verifyNameYN (수신자 실명확인 여부) : <?php echo $result->verifyNameYN ?></li>
               <li>payload (payload) : <?php echo $result->payload ?></li>
@@ -56,7 +56,7 @@
               <li>expireDT (인증요청 만료일시) : <?php echo $result->expireDT ?></li>
               <li>tmstitle (인증요청 메시지 제목) : <?php echo $result->tmstitle ?></li>
               <li>tmsmessage (인증요청 메시지 부가내용) : <?php echo $result->tmsmessage ?></li>
-              <li>returnToken (응답 토큰) : <?php echo $result->returnToken ?></li>
+
               <li>subClientName (별칭) : <?php echo $result->subClientName ?></li>
               <li>subClientCode (별칭코드) : <?php echo $result->subClientCode ?></li>
               <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <?php echo $result->viewDT ?></li>
