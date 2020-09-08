@@ -16,14 +16,10 @@
   $clientCode = '020040000001';
 
   // 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020090815353800001';
-
-  // 전자서명 AppToApp 방식에서 앱스킴으로 반환받은 서명값.
-  // Talk Mesage 방식으로 전자서명 요청한 경우 null 처리.
-  $signature = null;
+  $receiptID = '020090816184100001';
 
   try {
-    $result = $KakaocertService->getESignState($clientCode, $receiptID, $signature);
+    $result = $KakaocertService->getESignState($clientCode, $receiptID);
   }
   catch(KakaocertException $ke) {
     $code = $ke->getCode();

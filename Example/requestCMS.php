@@ -16,7 +16,7 @@
   include 'common.php';
 
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-  $clientCode = '020040000050';
+  $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청정보 객체
   $RequestCMS = new RequestCMS();
@@ -31,7 +31,7 @@
   $RequestCMS->ReceiverBirthDay = '19700101';
 
   // 수신자 휴대폰번호
-  $RequestCMS->ReceiverHP = '01012341234';
+  $RequestCMS->ReceiverHP = '010111222';
 
   // 수신자 성명
   $RequestCMS->ReceiverName = '테스트';

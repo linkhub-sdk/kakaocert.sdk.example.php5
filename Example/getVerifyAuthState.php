@@ -16,7 +16,7 @@
   $clientCode = '020040000001';
 
   // 본인인증 요청시 반환받은 접수아이디
-  $receiptID = '020090815371100001';
+  $receiptID = '020090816110300001';
 
   try {
     $result = $KakaocertService->getVerifyAuthState($clientCode, $receiptID);

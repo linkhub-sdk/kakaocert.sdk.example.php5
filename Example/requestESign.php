@@ -15,8 +15,9 @@
   // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
   $clientCode = '020040000001';
 
-  // 전자서명 AppToApp 호출 여부, true-AppToApp 방식, false-TalkMessage 방식
-  $isAppUseYN = true;
+  // 전자서명 AppToApp 인증 여부
+  // true-App To App 방식, false-Talk Message 방식
+  $isAppUseYN = false;
 
   // 전자서명 요청정보 객체
   $RequestESign = new RequestESign();
@@ -28,13 +29,13 @@
   $RequestESign->Expires_in = 60;
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  $RequestESign->ReceiverBirthDay = '19900108';
+  $RequestESign->ReceiverBirthDay = '19700101';
 
   // 수신자 휴대폰번호
-  $RequestESign->ReceiverHP = '01043245117';
+  $RequestESign->ReceiverHP = '010111222';
 
   // 수신자 성명
-  $RequestESign->ReceiverName = '정요한';
+  $RequestESign->ReceiverName = '테스트';
 
   // 별칭코드, 이용기관이 생성한 별칭코드 (파트너 사이트에서 확인가능)
   // 카카오톡 인증메시지 중 "요청기관" 항목에 표시
