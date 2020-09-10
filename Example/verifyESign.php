@@ -1,13 +1,15 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+cd .<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="/Example.css" media="screen" />
 		<title>Kakaocert SDK PHP 5.X Example.</title>
 	</head>
 <?php
+
   /*
   * 전자서명 요청건에 대한 서명을 검증합니다.
   * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
+  * - 카카오페이 서비스 운영정책에 따라 검증 API는 1회만 호출할 수 있습니다. 재시도시 오류처리됩니다.
   */
 
   include 'common.php';
