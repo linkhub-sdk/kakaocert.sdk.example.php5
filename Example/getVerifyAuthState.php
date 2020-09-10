@@ -7,7 +7,7 @@
 <?php
 
   /*
-  * 본인인증 인증 상태를 확인합니다.
+  * 본인인증 인증 요청에 대한 서명 상태를 확인합니다.
   */
 
   include 'common.php';
@@ -31,7 +31,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>본인인증 인증상태 확인</legend>
+				<legend>본인인증 서명상태 확인</legend>
 				<ul>
 					<?php
 						if ( isset($code) ) {

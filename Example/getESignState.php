@@ -7,7 +7,7 @@
 <?php
 
   /*
-  * 전자서명 인증 상태를 확인합니다.
+  * 전자서명 요청에 대한 서명 상태를 확인합니다.
   */
 
   include 'common.php';
@@ -31,7 +31,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>전자서명 인증상태 확인</legend>
+				<legend>전자서명 서명상태 확인</legend>
 				<ul>
 					<?php
 						if ( isset($code) ) {

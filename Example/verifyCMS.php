@@ -5,8 +5,10 @@
 		<title>Kakaocert SDK PHP 5.X Example.</title>
 	</head>
 <?php
+
   /*
-  * 서명상태가 완료인 서명요청건에 대해 자동이체 출금동의 서명을 검증합니다.
+  * 자동이체 출금동의 요청에 대한 서명을 검증합니다.
+  * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
   */
 
   include 'common.php';
