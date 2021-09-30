@@ -25,7 +25,7 @@
     // 인증토큰에 대한 IP제한기능 사용여부, 권장(true)
     $KakaocertService->IPRestrictOnOff(true);
 
-    // 카카오서트 API 서비스 고정 IP 사용여부, 기본값(false)
+    // 카카오써트 API 서비스 고정 IP 사용여부, 기본값(false)
     $KaksocertService->UseStaticIP(false);
 
 ?>
