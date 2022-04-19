@@ -48,6 +48,7 @@
                     <li>regDT (등록일시) : <?php echo $result->regDT ?></li>
                     <li>expires_in (인증요청 만료시간(초)) : <?php echo $result->expires_in ?></li>
                     <li>callCenterNum (고객센터 번호) : <?php echo $result->callCenterNum ?></li>
+                    <li>callCenterName (고객센터명) : <?php echo $result->callCenterName ?></li>
 
                     <li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <?php echo $result->allowSimpleRegistYN ?></li>
                     <li>verifyNameYN (수신자 실명확인 여부) : <?php echo $result->verifyNameYN ?></li>
