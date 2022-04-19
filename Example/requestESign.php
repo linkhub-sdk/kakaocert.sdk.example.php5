@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="/Example.css" media="screen" />
-		<title>Kakaocert SDK PHP 5.X Example.</title>
-	</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="/Example.css" media="screen" />
+        <title>Kakaocert SDK PHP 5.X Example.</title>
+    </head>
 <?php
 
   /*
@@ -75,29 +75,29 @@
     $message = $pe->getMessage();
   }
 ?>
-	<body>
-		<div id="content">
-			<p class="heading1">Response</p>
-			<br/>
-			<fieldset class="fieldset1">
-				<legend>전자서명 요청</legend>
-				<ul>
+    <body>
+        <div id="content">
+            <p class="heading1">Response</p>
+            <br/>
+            <fieldset class="fieldset1">
+                <legend>전자서명 요청</legend>
+                <ul>
 
-          <?php
-            if ( isset($response) ) {
-          ?>
-            <li>접수아이디 (receiptID) : <?php echo $response->receiptId ?></li>
-            <li>[AppToApp용] 카카오톡 트랜잭션아이디 (tx_id) : <?php echo $response->tx_id ?></li>
-          <?php
-            } else {
-          ?>
-            <li>Response.code : <?php echo $code ?> </li>
-            <li>Response.message : <?php echo $message ?></li>
-          <?php
-            }
-          ?>
-				</ul>
-			</fieldset>
-		 </div>
-	</body>
+                <?php
+                if ( isset($response) ) {
+                ?>
+                <li>접수아이디 (receiptID) : <?php echo $response->receiptId ?></li>
+                <li>[AppToApp용] 카카오톡 트랜잭션아이디 (tx_id) : <?php echo $response->tx_id ?></li>
+                <?php
+                } else {
+                ?>
+                <li>Response.code : <?php echo $code ?> </li>
+                <li>Response.message : <?php echo $message ?></li>
+                <?php
+                }
+                ?>
+                </ul>
+            </fieldset>
+        </div>
+    </body>
 </html>
