@@ -61,6 +61,7 @@
                     <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <?php echo $result->viewDT ?></li>
                     <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <?php echo $result->completeDT ?></li>
                     <li>verifyDT (전자서명 검증일시) : <?php echo $result->verifyDT ?></li>
+                    <li>appUseYN (AppToApp 호출여부) : <?php echo $result->appUseYN ?></li>
                     <?php
                     }
                     ?>
