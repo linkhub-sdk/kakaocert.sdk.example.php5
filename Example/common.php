@@ -28,7 +28,7 @@
     // 카카오써트 API 서비스 고정 IP 사용여부, 기본값(false)
     $KakaocertService->UseStaticIP(false);
 
-    // 로컬서버 시간 사용 여부 true(기본값) - 사용, false(미사용)
+    // 로컬시스템 시간 사용 여부 true(기본값) - 사용, false(미사용)
     $KakaocertService->UseLocalTimeYN(true);
 
 ?>
