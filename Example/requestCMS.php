@@ -28,20 +28,20 @@
   // 고객센터 전화번호, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
   $RequestCMS->CallCenterNum = '1600-8536';
 
-  // 고객센터명, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
+  // 고객센터명, 카카오톡 인증메시지 중 "고객센터명" 항목에 표시
   $RequestCMS->CallCenterName = '테스트';
 
   // 인증요청 만료시간(초), 최대값 1000, 인증요청 만료시간(초) 내에 미인증시 만료 상태로 처리됨
   $RequestCMS->Expires_in = 60;
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  $RequestCMS->ReceiverBirthDay = '19700101';
+  $RequestCMS->ReceiverBirthDay = '19941219';
 
   // 수신자 휴대폰번호
   $RequestCMS->ReceiverHP = '010111222';
 
   // 수신자 성명
-  $RequestCMS->ReceiverName = '테스트';
+  $RequestCMS->ReceiverName = '홍길동';
 
   // 예금주명
   $RequestCMS->BankAccountName = '예금주명';
@@ -81,7 +81,7 @@
   $RequestCMS->PayLoad = 'Payload123';
 
   try {
-    $receiptID = $KakaocertService->requestCMS($clientCode, $RequestCMS, $isAppUseYN);
+    $response = $KakaocertService->requestCMS($clientCode, $RequestCMS, $isAppUseYN);
   }
   catch(KakaocertException $pe) {
     $code = $pe->getCode();
@@ -96,9 +96,10 @@
                 <legend>자동이체 출금동의 요청</legend>
                 <ul>
                 <?php
-                if ( isset($receiptID) ) {
+                if ( isset($response) ) {
                 ?>
-                <li>접수아이디 (receiptID) : <?php echo $receiptID ?></li>
+                <li>접수아이디 (receiptID) : <?php echo $response->receiptId ?></li>
+                <li>[AppToApp용] 카카오톡 트랜잭션아이디 (tx_id) : <?php echo $response->tx_id ?></li>
                 <?php
                 } else {
                 ?>

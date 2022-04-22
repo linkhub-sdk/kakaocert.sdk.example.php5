@@ -16,7 +16,7 @@
   $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '020090816135500001';
+  $receiptID = '022042217454500001';
 
   try {
     $result = $KakaocertService->getCMSState($clientCode, $receiptID);
@@ -42,6 +42,7 @@
                     } else {
                     ?>
                     <li>receiptID (접수 아이디) : <?php echo $result->receiptID ?></li>
+                    <li>tx_id (카카오톡 트랜잭션아이디-AppToApp용) : <?php echo $result->tx_id ?></li>
                     <li>clientCode (이용기관코드) : <?php echo $result->clientCode ?></li>
                     <li>clientName (이용기관명) : <?php echo $result->clientName ?></li>
                     <li>state (상태코드) : <?php echo $result->state ?></li>
@@ -49,6 +50,7 @@
                     <li>expires_in (인증요청 만료시간(초)) : <?php echo $result->expires_in ?></li>
                     <li>callCenterNum (고객센터 번호) : <?php echo $result->callCenterNum ?></li>
                     <li>callCenterName (고객센터명) : <?php echo $result->callCenterName ?></li>
+                    
                     <li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <?php echo $result->allowSimpleRegistYN ?></li>
                     <li>verifyNameYN (수신자 실명확인 여부) : <?php echo $result->verifyNameYN ?></li>
                     <li>payload (payload) : <?php echo $result->payload ?></li>
