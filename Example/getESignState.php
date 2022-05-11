@@ -16,7 +16,7 @@
   $clientCode = '020040000001';
 
   // 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020090816184100001';
+  $receiptID = '022050816184100001';
 
   try {
     $result = $KakaocertService->getESignState($clientCode, $receiptID);

@@ -35,7 +35,7 @@
   $RequestCMS->Expires_in = 60;
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  $RequestCMS->ReceiverBirthDay = '19941219';
+  $RequestCMS->ReceiverBirthDay = '19700101';
 
   // 수신자 휴대폰번호
   $RequestCMS->ReceiverHP = '010111222';
@@ -49,7 +49,7 @@
   // 계좌번호, 이용기관은 사용자가 식별가능한 범위내에서 계좌번호의 일부를 마스킹 처리할 수 있음 (예시) 371-02-6***85
   $RequestCMS->BankAccountNum = '9-4324-5**7-58';
 
-  // 은행코드
+  // 참가기관 코드
   $RequestCMS->BankCode = '004';
 
   // 납부자번호, 이용기관에서 부여한 고객식별번호

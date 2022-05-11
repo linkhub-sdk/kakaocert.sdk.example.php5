@@ -18,7 +18,7 @@ cd .<html xmlns="http://www.w3.org/1999/xhtml">
   $clientCode = '020040000001';
 
   // 전자서명 요청시 반환받은 접수아이디
-  $receiptID = '020090816174700001';
+  $receiptID = '022050816174700001';
 
   // 전자서명 AppToApp 방식에서 앱스킴으로 반환받은 서명값.
   // Talk Mesage 방식으로 전자서명 요청한 경우 null 처리.

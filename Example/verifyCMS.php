@@ -18,7 +18,7 @@
   $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '020090816135500001';
+  $receiptID = '022050816135500001';
 
   try {
     $result = $KakaocertService->verifyCMS($clientCode, $receiptID);
