@@ -18,10 +18,14 @@
   $clientCode = '020040000001';
 
   // 자동이체 출금동의 요청시 반환받은 접수아이디
-  $receiptID = '022050816135500001';
+  $receiptID = '022051211474100001';
 
+  // 출금동의 AppToApp 방식에서 앱스킴으로 반환받은 서명값.
+  // Talk Mesage 방식으로 출금동의 요청한 경우 null 처리.
+  $signature = null;
+  
   try {
-    $result = $KakaocertService->verifyCMS($clientCode, $receiptID);
+    $result = $KakaocertService->verifyCMS($clientCode, $receiptID, $signature);
   }
   catch(KakaocertException $pe) {
     $code = $pe->getCode();
