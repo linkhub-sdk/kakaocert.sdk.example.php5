@@ -8,6 +8,7 @@
 
   /*
   * 전자서명 요청에 대한 서명 상태를 확인합니다.
+  * - https://www.kakaocert.com/docs/ESign/API/php#GetESignState
   */
 
   include 'common.php';

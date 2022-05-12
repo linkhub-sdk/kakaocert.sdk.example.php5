@@ -8,6 +8,7 @@
 
   /*
   * 전자서명 인증을 요청합니다.
+  * - https://www.kakaocert.com/docs/ESign/API/php#RequestESign
   */
 
   include 'common.php';

@@ -8,6 +8,7 @@
 
   /*
   * 본인인증 인증 요청에 대한 서명 상태를 확인합니다.
+  * - https://www.kakaocert.com/docs/verifyAuth/API/php#GetVerifyAuthState
   */
 
   include 'common.php';

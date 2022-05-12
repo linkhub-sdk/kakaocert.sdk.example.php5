@@ -10,6 +10,7 @@
   * 자동이체 출금동의 요청에 대한 서명을 검증합니다.
   * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
   * - 카카오페이 서비스 운영정책에 따라 검증 API는 1회만 호출할 수 있습니다. 재시도시 오류처리됩니다.
+  * - https://www.kakaocert.com/docs/CMS/API/php#VerifyCMS
   */
 
   include 'common.php';
@@ -23,7 +24,7 @@
   // 출금동의 AppToApp 방식에서 앱스킴으로 반환받은 서명값.
   // Talk Mesage 방식으로 출금동의 요청한 경우 null 처리.
   $signature = null;
-  
+
   try {
     $result = $KakaocertService->verifyCMS($clientCode, $receiptID, $signature);
   }
